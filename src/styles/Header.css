@@ -1,0 +1,248 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  height: 70px;
+  background: linear-gradient(
+    to right,
+    var(--header-bg-start),
+    var(--header-bg-end)
+  );
+  border-bottom: 1px solid var(--border-color);
+  transition: all 0.3s ease;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #2563eb, #7c3aed);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: titleGradient 8s ease infinite;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  padding-right: 2.5rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: var(--input-bg);
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  width: 200px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px var(--primary-color-alpha);
+}
+
+.search-button {
+  position: absolute;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.search-button:hover {
+  color: var(--text-color);
+}
+
+.notifications-btn,
+.theme-toggle-btn {
+  position: relative;
+  padding: 0.5rem;
+  border: none;
+  background: var(--button-bg);
+  color: var(--text-color);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.notifications-btn:hover,
+.theme-toggle-btn:hover {
+  background: var(--button-hover-bg);
+}
+
+.notification-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: var(--primary-color);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: pulse 2s infinite;
+}
+
+.user-menu {
+  position: relative;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.05);
+}
+
+.user-dropdown {
+  position: absolute;
+  top: calc(100% + 0.5rem);
+  right: 0;
+  background: var(--dropdown-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.user-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--dropdown-hover-bg);
+}
+
+@keyframes titleGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Dark mode variables */
+:root {
+  --header-bg-start: #ffffff;
+  --header-bg-end: #f8fafc;
+  --border-color: #e2e8f0;
+  --text-color: #1e293b;
+  --text-muted: #64748b;
+  --input-bg: #ffffff;
+  --button-bg: #f1f5f9;
+  --button-hover-bg: #e2e8f0;
+  --primary-color: #3b82f6;
+  --primary-color-alpha: rgba(59, 130, 246, 0.2);
+  --dropdown-bg: #ffffff;
+  --dropdown-hover-bg: #f1f5f9;
+}
+
+.dark {
+  --header-bg-start: #0f172a;
+  --header-bg-end: #1e293b;
+  --border-color: #334155;
+  --text-color: #f1f5f9;
+  --text-muted: #94a3b8;
+  --input-bg: #1e293b;
+  --button-bg: #334155;
+  --button-hover-bg: #475569;
+  --primary-color: #60a5fa;
+  --primary-color-alpha: rgba(96, 165, 250, 0.2);
+  --dropdown-bg: #1e293b;
+  --dropdown-hover-bg: #334155;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .header {
+    padding: 0 1rem;
+  }
+
+  .header-title {
+    font-size: 1.25rem;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+
+  .notifications-btn,
+  .theme-toggle-btn {
+    padding: 0.4rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .search-form {
+    flex: 1;
+    margin-right: 1rem;
+  }
+
+  .search-input {
+    width: 100%;
+  }
+}
