@@ -1,70 +1,141 @@
-# Getting Started with Create React App
+# **Assignment: Role-Based Access Control (RBAC) UI**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Objective**
 
-## Available Scripts
+To evaluate your creativity, understanding, and technical skills in building a **Role-Based Access Control (RBAC)** User Interface. This assignment is designed to give you the flexibility to showcase your problem-solving abilities and your personal approach to designing secure and functional UIs.
 
-In the project directory, you can run:
+> **Note:**
+> If you have already implemented an RBAC UI in any project, you can submit that project for evaluation. Be sure to include a detailed description and links to the repository or deployment.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Tech Stack**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Frontend Framework: React
+- Optional: Backend API Mocking (e.g., JSON Server, Mock API tools)
+- Styling: CSS, SCSS, or any preferred CSS framework (e.g., Tailwind, Bootstrap)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## **Completion Instructions**
 
-### `npm run build`
+### **Functionality**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### **Must Have**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **User Management:**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   - View and manage users.
+   - Add, edit, or delete users.
+   - Assign roles to users and manage their status (Active/Inactive).
 
-### `npm run eject`
+2. **Role Management:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   - Define and edit roles.
+   - Include permissions for each role (Read, Write, Delete, etc.).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. **Dynamic Permissions:**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   - Assign or modify permissions for roles.
+   - Display permissions for ease of understanding and modification.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. **API Simulation (Optional):**
+   - Simulate API calls for CRUD operations on users and roles.
+   - Provide mock server responses to validate functionality.
 
-## Learn More
+#### **Nice to Have**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Advanced features such as sorting, filtering, and search.
+2. A dashboard with analytics or a summary of user roles and permissions.
+3. Inline editing for quick updates to users or roles.
+4. Themes or dark mode for enhanced user experience.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### **Guidelines to Develop the Project**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### **Must Have**
 
-### Analyzing the Bundle Size
+1. Follow best practices for secure input handling and error management.
+2. Write clean, modular, and maintainable code.
+3. Ensure responsiveness for all screen sizes (desktop, tablet, mobile).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### **Nice to Have**
 
-### Making a Progressive Web App
+1. Use reusable components for better scalability.
+2. Include meaningful animations or transitions to enhance the UI experience.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+### **Submission Instructions**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+#### **Must Have**
 
-### Deployment
+1. Provide a link to the GitHub repository with a detailed README file.
+2. Include a deployment link for testing and review.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+#### **Nice to Have**
 
-### `npm run build` fails to minify
+1. Provide screenshots or a demo video link showcasing the app's features.
+2. Offer setup instructions in the README for reviewers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## **Resources**
+
+### **Design Files**
+
+N/A – Design based on your creativity.
+
+### **APIs**
+
+Mock APIs or any preferred service for API simulation.
+
+### **Third-party Packages**
+
+- React Router for navigation.
+- Axios or Fetch API for data handling.
+- State Management tools (optional).
+
+---
+
+## **Links**
+
+- GitHub Repository: [https://github.com/akhilbhumireddy/vrvsecuritydashboard.git](https://github.com/akhilbhumireddy/vrvsecuritydashboard.git)
+- Deployment: [https://akhilsdashboard.netlify.app/](https://akhilsdashboard.netlify.app/)
+
+---
+
+## **Evaluation Criteria**
+
+1. **Creativity and Design Quality**
+
+   - Visual appeal and innovative design.
+   - Alignment with RBAC functionalities.
+
+2. **Responsiveness**
+
+   - Adapts effectively to all devices and screen sizes.
+
+3. **Functionality**
+
+   - Core features implemented and working seamlessly.
+
+4. **User Experience (UX)**
+
+   - Intuitive and accessible interface.
+
+5. **Technical Skill**
+
+   - Code quality, modularity, and adherence to best practices.
+
+6. **Documentation**
+
+   - Comprehensive README with setup instructions and feature explanations.
+
+7. **Security Practices**
+
+   - Basic input validation, error handling, and secure workflows.
+
+8. **Additional Features (Bonus)**
+   - Sorting, filtering, or any extra functionalities beyond the requirements.
